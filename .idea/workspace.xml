@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5f62607-359c-43d0-ab65-73a14602ecdf" name="Changes" comment="eda and datasets">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/text_processing.py" afterDir="false" />
+    <list default="true" id="b5f62607-359c-43d0-ab65-73a14602ecdf" name="Changes" comment="explore different aproaches">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/eda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/eda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/text_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/text_processing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1768850388869</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="explore different aproaches">
+      <option name="closed" value="true" />
+      <created>1768856378003</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768856378003</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="eda and datasets" />
-    <option name="LAST_COMMIT_MESSAGE" value="eda and datasets" />
+    <MESSAGE value="explore different aproaches" />
+    <option name="LAST_COMMIT_MESSAGE" value="explore different aproaches" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
