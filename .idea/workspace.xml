@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5f62607-359c-43d0-ab65-73a14602ecdf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/company-classifier-challenge.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasets/insurance_taxonomy - insurance_taxonomy.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasets/ml_insurance_challenge.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eda.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/eda.py" afterDir="false" />
+    <list default="true" id="b5f62607-359c-43d0-ab65-73a14602ecdf" name="Changes" comment="eda and datasets">
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/text_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/eda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/eda.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "alinaiacob"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/alinaiacob/company-classifier-challenge.git",
+    "accountId": "d5ebef97-2815-4243-a368-869e4064a22c"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -44,6 +50,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.eda.executor": "Run",
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "D:/company-classifier-challenge/datasets"
@@ -73,6 +80,29 @@
       <option name="presentableId" value="Default" />
       <updated>1768848941341</updated>
     </task>
+    <task id="LOCAL-00001" summary="eda and datasets">
+      <option name="closed" value="true" />
+      <created>1768850388869</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768850388869</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="eda and datasets" />
+    <option name="LAST_COMMIT_MESSAGE" value="eda and datasets" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
