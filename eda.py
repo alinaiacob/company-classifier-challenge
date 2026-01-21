@@ -14,3 +14,4 @@ print(type(all_nan))
 histogram_for_nan_values(companies_df)
 
 print(companies_df.info)
+

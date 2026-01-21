@@ -83,3 +83,70 @@ def classify_with_expanded_version(row):
         return insurance_values[best_match['corpus_id']]
     else:
         return "Unclassified"
+
+
+
+import pandas as pd
+import torch
+from sentence_transformers import SentenceTransformer, util
+
+
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+def create_weighted_input(row):
+
+    niche = (str(row['niche']) + " ") if pd.notna(row['niche']) else ""
+    cat = (str(row['category']) + " ") if pd.notna(row['category']) else ""
+    tags = (str(row['business_tags']) + " ") if pd.notna(row['business_tags']) else ""
+    sect = (str(row['sector']) + " ") if pd.notna(row['sector']) else ""
+    desc = str(row['description']) if pd.notna(row['description']) else ""
+
+    weighted_text = (niche * 5) + (cat * 3) + (tags * 2) + (sect * 2) + desc
+    return weighted_text
+
+
+
+def model_with_weights(companies_df):
+ companies_df['weighted_features'] = companies_df.apply(create_weighted_input, axis=1)
+
+ company_embeddings = model.encode(
+    companies_df['weighted_features'].tolist(),
+    batch_size=64,
+    show_progress_bar=True,
+    convert_to_tensor=True
+)
+
+
+ tax_embeddings = model.encode(expanded_insurance_values, convert_to_tensor=True)
+
+ cos_scores = util.cos_sim(company_embeddings, tax_embeddings)
+
+ best_scores, best_indices = torch.max(cos_scores, dim=1)
+ companies_df['insurance_label'] = [
+    insurance_values[idx]
+    for idx, score in zip(best_indices, best_scores)
+ ]
+
+ companies_df.drop(columns=['weighted_features']).to_csv('final_weighted_classification3.csv', index=False)
+
+def model_with_weights_score(companies_df):
+     companies_df['weighted_features'] = companies_df.apply(create_weighted_input, axis=1)
+
+     company_embeddings = model.encode(
+         companies_df['weighted_features'].tolist(),
+         batch_size=64,
+         show_progress_bar=True,
+         convert_to_tensor=True
+     )
+
+     tax_embeddings = model.encode(expanded_insurance_values, convert_to_tensor=True)
+
+     cos_scores = util.cos_sim(company_embeddings, tax_embeddings)
+
+     best_scores, best_indices = torch.max(cos_scores, dim=1)
+     companies_df['insurance_label'] = [
+         insurance_values[idx] if score > 0.35 else "Unclassified"
+         for idx, score in zip(best_indices, best_scores)
+     ]
+
+     companies_df.drop(columns=['weighted_features']).to_csv('final_weighted_classification2.csv', index=False)
