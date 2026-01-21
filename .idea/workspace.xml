@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5f62607-359c-43d0-ab65-73a14602ecdf" name="Changes" comment="explore different aproaches">
+    <list default="true" id="b5f62607-359c-43d0-ab65-73a14602ecdf" name="Changes" comment="try different models and figure out the best solution">
       <change afterPath="$PROJECT_DIR$/utils/test_solution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/company-classifier-challenge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/company-classifier-challenge.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -106,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768944263721</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="try different models and figure out the best solution">
+      <option name="closed" value="true" />
+      <created>1769026185945</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1769026185945</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,7 +131,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="eda and datasets" />
     <MESSAGE value="explore different aproaches" />
-    <option name="LAST_COMMIT_MESSAGE" value="explore different aproaches" />
+    <MESSAGE value="try different models and figure out the best solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="try different models and figure out the best solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

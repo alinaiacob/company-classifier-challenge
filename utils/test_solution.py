@@ -8,7 +8,6 @@ noise_words = {'services', 'service', 'systems', 'system', 'products', 'product'
 
 def get_essential_keywords(text):
     if pd.isna(text): return set()
-    # Curățăm textul și păstrăm doar rădăcinile cuvintelor importante
     text = re.sub(r'[^a-z\s]', '', str(text).lower())
     words = text.split()
     return {stemmer.stem(w) for w in words if w not in noise_words and len(w) > 2}
