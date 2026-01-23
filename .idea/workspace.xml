@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5f62607-359c-43d0-ab65-73a14602ecdf" name="Changes" comment="try different models and figure out the best solution">
-      <change afterPath="$PROJECT_DIR$/models/flat-model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/hierarchical-model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results_insights.py" afterDir="false" />
+    <list default="true" id="b5f62607-359c-43d0-ab65-73a14602ecdf" name="Changes" comment="testing different models and make a presentation website to interact with the results">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insurance_companies_with_labels-third-model.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/insurance_companies_with_labels.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/test_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test_solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/text_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/text_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_insights.py" beforeDir="false" afterPath="$PROJECT_DIR$/results_insights.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769026240827</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="testing different models and make a presentation website to interact with the results">
+      <option name="closed" value="true" />
+      <created>1769169948274</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1769169948274</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +155,7 @@
     <MESSAGE value="eda and datasets" />
     <MESSAGE value="explore different aproaches" />
     <MESSAGE value="try different models and figure out the best solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="try different models and figure out the best solution" />
+    <MESSAGE value="testing different models and make a presentation website to interact with the results" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing different models and make a presentation website to interact with the results" />
   </component>
 </project>

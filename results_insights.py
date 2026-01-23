@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import re
 import numpy as np
+import plotly.express as px
 
 flat_df = pd.read_csv("results/more_labels/companies_predicted_labels_only_model-more-labels.csv")
 hier_df = pd.read_csv("results/more_labels/companies_predicted_hierarchical_more_labels.csv")
@@ -92,6 +93,25 @@ st.write("Top 1 label identic Flat vs MPNet:", (sample_df['top1_flat']==sample_d
 st.write("Top 1 label identic Hier vs MPNet:", (sample_df['top1_hier']==sample_df['top1_mpnet']).sum(), " / ", len(sample_df))
 
 
+
+def extract_all_scores(text):
+    if pd.isna(text) or text.strip() == "":
+        return []
+    try:
+        labels_list = ast.literal_eval(text)
+        return [s[1] for s in labels_list]  # toate scorurile
+    except:
+        return []
+
+hist_df = pd.DataFrame({
+    'Flat': sum(flat_df['top_labels_flat'].apply(extract_all_scores).tolist(), []),
+    'MPNet': sum(mpnet_df['top_labels_mpnet'].apply(extract_all_scores).tolist(), [])
+})
+
+hist_df = hist_df.melt(var_name='Method', value_name='Score')
+fig = px.histogram(hist_df, x='Score', color='Method', barmode='overlay', nbins=20,
+                   title="Distribuția scorurilor cosine (Top N labels)")
+fig.show()
 
 
 def extract_scores(text):
