@@ -22,6 +22,7 @@ Modele utilizate se regasesc la calea:
 models/flat-model.py
 models/hierarchical-model.py
 
+In fisierul add_results.py am adaugat in fisierul initiat label-ul aferent clasificarii (am folosit modelul Mpnet)
 
 De asemenea, am realizat si un website de prezentare cu Streamlit, in care se poate interactiona cu rezultatele, si fisierul are numele results_insights.py
 In acest fel am comparat rezultatele obtinute si am putut vedea o imbunatatire a rezultatelor atunci cand s-a utilizat un model mai robust si complex.
