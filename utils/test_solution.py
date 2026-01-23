@@ -62,7 +62,7 @@ def debug_misclassifications(df, taxonomy_expanded_dict):
     for _, row in classified.iterrows():
         # 1. Extragem cuvinte cheie din firmă (Nișă + Categorie + Tags)
         company_text = f"{row['niche']} {row['category']} {row['business_tags']}"
-        company_keywords = get_stemmed_keywords(company_text)
+        company_keywords = get_essential_keywords(company_text)
 
         # 2. Extragem cuvinte cheie din eticheta atribuită (folosind și varianta extinsă)
         label_assigned = row['insurance_label']
